@@ -1,16 +1,12 @@
-import leetcode.TwoSum;
+import leetcode.NumberPalindrome;
+import leetcode.RomanInteger;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-
-import static algorithm.BoyerMoore.searchSubstring;
+import static leetcode.NumberPalindrome.isPalindrome;
 
 public class Main {
     public static void main(String[] args) {
-        String str = "linear data structures";
-        String subStr = "ser";
-        Boolean getSubStr = searchSubstring(str, subStr);
-        System.out.println(getSubStr);
+        String s = "LXIII";
+        int romToInt = RomanInteger.romanToInt(s);
+        System.out.println(romToInt);
     }
 }
